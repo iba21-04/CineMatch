@@ -50,6 +50,7 @@ def recommend():
         })
 
     return jsonify(results)
+
 @app.route('/titles', methods=['GET'])
 def titles():
     sample = df['Title'].head(50).tolist()
